@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    min-height: 100vh;
+    background-color: lightgrey;
+    background-image: linear-gradient(-135deg, silver 0%, gray 50%, black 75%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    background: url("Home.jpg") no-repeat top center / cover;       
+    position: relative;
+}
+
+/*Color over the background*/
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgba(43,51,59,0.5);
+    display: flex;
+}
+
+/*hamb menu box*/
+.menu-btn{
+    margin-left: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    /*border: 3px solid rgb(212, 210, 210);*/
+}
+/*middle line of hamb menu*/
+.menu-btn_burger{
+    width: 25px;
+    height: 3px;
+    background-color: gold;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+.menu-btn_burger::before,
+.menu-btn_burger::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: gold;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+/*upper line of hamb menu*/
+.menu-btn_burger::before{
+    transform:translateY(-8px) ;
+}
+/*middle line of hamb menu*/
+.menu-btn_burger::after{
+    transform:translateY(8px) ;
+}
+/*Animation for hamburger menu*/
+/*3 lines move left while middle one dissapear*/
+.menu-btn.open .menu-btn_burger{
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+/*Making a cross using upper and lower lines*/
+.menu-btn.open .menu-btn_burger::before{
+    transform: rotate(45deg) translate(35px, -35px);
+    background-color: silver;
+}
+.menu-btn.open .menu-btn_burger::after{
+    transform: rotate(-45deg) translate(35px, 35px);
+    background-color: silver;
+}
+
+/*Navigation menu*/
+.nav{
+    margin-left: 15px;
+    height: 100%;
+    position:relative;
+    top: 0;
+    z-index: 1000;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    display: flex;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.menu-btn.open .text{
+    transform: rotateY(0deg);
+}
+
+/*menu links*/
+.text{
+    position: fixed;
+    left: 0px;
+    top: 40px;
+    z-index: 980;
+    height: 100%;
+    background: #172121;
+    background-image: linear-gradient(135deg, black 0%, gray 80%, silver 98%);
+    border-right: 1px solid rgba(0, 0, blue, 0.3);
+    transition: transform 0.6s linear;
+    backface-visibility: hidden;
+    transform-origin: left;
+    transform:perspective(1000px) rotateY(90deg);
+}
+
+.text li{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.text a{
+    display: block;
+    width: 200px;
+    height: 64px;
+    line-height: 64px;
+    text-indent: 1em;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #999999;
+    text-shadow: 0 1px 0 black;
+    transition: all in ease;
+    font-family: sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Logo of Kaushalya Jewelery*/
+#logo {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    animation: fill 0.5s ease forwards 3.8s;
+}
+
+#logo path:nth-child(1) {
+    stroke-dasharray: 572px;
+    stroke-dashoffset: 572px;
+}
+
+#logo path:nth-child(2) {
+    stroke-dasharray: 472px;
+    stroke-dashoffset: 446px;
+    animation: line-anim 2s ease forwards;
+}
+
+#logo path:nth-child(3) {
+    stroke-dasharray: 372px;
+    stroke-dashoffset: 362px;
+    animation: line-anim 2s ease forwards 0.2s;
+}
+
+#logo path:nth-child(4) {
+    stroke-dasharray: 572px;
+    stroke-dashoffset: 572px;
+    animation: line-anim 2s ease forwards 0.4s;
+}
+
+#logo path:nth-child(5) {
+    stroke-dasharray: 572px;
+    stroke-dashoffset: 572px;
+    animation: line-anim 2s ease forwards 0.6s;
+}
+
+#logo path:nth-child(6) {
+    stroke-dasharray: 572px;
+    stroke-dashoffset: 572px;
+    animation: line-anim 2s ease forwards 0.8s;
+}
+
+#logo path:nth-child(7) {
+    stroke-dasharray: 572px;
+    stroke-dashoffset: 572px;
+    animation: line-anim 2s ease forwards 1s;
+}
+
+#logo path:nth-child(8) {
+    stroke-dasharray: 572px;
+    stroke-dashoffset: 572px;
+    animation: line-anim 2s ease forwards 1.2s;
+}
+
+#logo path:nth-child(9) {
+    stroke-dasharray: 572px;
+    stroke-dashoffset: 572px;
+    animation: line-anim 2s ease forwards 1.4s;
+}
+
+#logo path:nth-child(10) {
+    stroke-dasharray: 572px;
+    stroke-dashoffset: 572px;
+    animation: line-anim 2s ease forwards 1.6s;
+}
+
+#logo path:nth-child(11) {
+    stroke-dasharray: 572px;
+    stroke-dashoffset: 572px;
+    animation: line-anim 2s ease forwards 1.8s;
+}
+
+#logo path:nth-child(12) {
+    stroke-dasharray: 572px;
+    stroke-dashoffset: 572px;
+    animation: line-anim 2s ease forwards 2s;
+}
+
+#logo path:nth-child(13) {
+    stroke-dasharray: 572px;
+    stroke-dashoffset: 572px;
+    animation: line-anim 2s ease forwards 2.2s;
+}
+
+#logo path:nth-child(14) {
+    stroke-dasharray: 572px;
+    stroke-dashoffset: 572px;
+    animation: line-anim 2s ease forwards 2.4s;
+}
+
+#logo path:nth-child(15) {
+    stroke-dasharray: 572px;
+    stroke-dashoffset: 572px;
+    animation: line-anim 2s ease forwards 2.6s;
+}
+
+#logo path:nth-child(16) {
+    stroke-dasharray: 572px;
+    stroke-dashoffset: 572px;
+    animation: line-anim 2s ease forwards 2.8s;
+}
+
+#logo path:nth-child(17) {
+    stroke-dasharray: 572px;
+    stroke-dashoffset: 572px;
+    animation: line-anim 2s ease forwards 3s;
+}
+
+#logo path:nth-child(18) {
+    stroke-dasharray: 572px;
+    stroke-dashoffset: 572px;
+    animation: line-anim 2s ease forwards 3.2s;
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: rgb(243, 163, 13);
+    }
+}
+
