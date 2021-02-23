@@ -13,7 +13,7 @@ body{
     background-image: linear-gradient(-135deg, silver 0%, gray 50%, black 75%);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 100%;
-    background: url("Home.jpg") no-repeat top center / cover;       
+    background: url("Home.jpg") no-repeat top center / cover;   
     position: relative;
 }
 
@@ -109,9 +109,8 @@ body{
     left: 0px;
     top: 40px;
     z-index: 980;
-    height: 100%;
-    background: #172121;
-    background-image: linear-gradient(135deg, black 0%, gray 80%, silver 98%);
+    height: 58.52%;
+    background-image: linear-gradient(148deg, gold 0%,black 5%,black 15%, black 35%, gold 85%);
     border-right: 1px solid rgba(0, 0, blue, 0.3);
     transition: transform 0.6s linear;
     backface-visibility: hidden;
@@ -130,16 +129,24 @@ body{
     line-height: 64px;
     text-indent: 1em;
     font-size: 1.4em;
+    font-weight: 700;
     text-decoration: none;
-    color: #999999;
+    color: #adadad;
     text-shadow: 0 1px 0 black;
     transition: all in ease;
     font-family: sans-serif;
 }
 
+.text a:hover{
+    color: silver;
+    font-size: 1.5em;
+    background-image: linear-gradient(148deg, gold 0%,black 5%,black 15%, black 35%, gold 85%);
+}
+
 ul{
     list-style-type: none;
 }
+
 
 
 
