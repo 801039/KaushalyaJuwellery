@@ -116,10 +116,7 @@ body{
     backface-visibility: hidden;
     transform-origin: left;
     transform:perspective(1000px) rotateY(90deg);
-}
-
-.text li{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius:50px 0px 50px;
 }
 
 .text a{
@@ -141,6 +138,8 @@ body{
     color: silver;
     font-size: 1.5em;
     background-image: linear-gradient(148deg, gold 0%,black 5%,black 15%, black 35%, gold 85%);
+    border-radius:50px 0px 50px;
+    box-shadow: 3px 4px 5px black;
 }
 
 ul{

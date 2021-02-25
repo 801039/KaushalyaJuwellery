@@ -16,6 +16,7 @@
             <div class="nav" id="nav"></div>
                 <div class="text">
                     <ul>
+                      <p></p>
                         <li id="home"><a href="">🏠Home</a></li>
                         <li><a href="">🚶Join Us</a></li>
                         <li><a href="">🏢Shop</a></li>
