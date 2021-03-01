@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaushalya Jewelery</title>
-    <link rel="stylesheet" href="Kaushalya.css">
+    <link rel="stylesheet" href="KaushalyaHome.css">
 </head>
 <body>
     <div class="overlay">
@@ -19,7 +19,7 @@
                       <p></p>
                         <li id="home"><a href="">🏠Home</a></li>
                         <li><a href="">🚶Join Us</a></li>
-                        <li><a href="">🏢Shop</a></li>
+                        <li><a href="ShopBackup/Bracelet.html" target="blank">🏢Shop</a></li>
                         <li><a href="">🎁Offers</a></li>
                         <li><a href="">👨‍About Us</a></li>
                         <li><a href="">💬Chat</a></li>
@@ -31,7 +31,7 @@
 
 
     </div>
-    <script src="Kaushalya.js"></script>
+    <script src="KaushalyaHome.js"></script>
 </body>
 </html>
 
