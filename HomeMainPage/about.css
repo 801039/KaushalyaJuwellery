@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-weight: center Gothic;
+    background: url(About_Us-photos/back1.jpg)no-repeat;
+    background-size: cover;
+    background-position: center ;
+}
+.container{
+    height: 75vh;
+    width: 30%;
+    background:rgba(0,0,0,.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+}
+.img{
+    height: 70px;
+    width: 70px;
+    background: url(About_Us-photos/abt.jpg)no-repeat;
+    background-size: cover;
+    background-position:center ;
+    border-radius: 50px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.container h1{
+    color: black;
+    margin-top: 80px;
+}
+.container p{
+    color: white;
+    margin-top: 50px;
+    font-size: large;
+}
+.way{
+    margin: 0px;
+    padding: 180px;
+    box-sizing: border-box;
+    
+    
+}
+.body{
+    background: green;
+    
+}
+.wrapper{
+    margin-top: 10%;
+    
+}
+.wrapper h1{
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.history{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.history .history_event{
+    background: rgb(137, 129, 139);
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 30px;
+    line-height: 5px;
+    color: purple;
+    position: relative;
+}
+.history .history_event h3{
+    color: green;
+    font-size: 26px;
+    margin-top: 50px;
+}
+.history .history_event p.place{
+    color: goldenrod;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 12px 0;
+}
+.history .history_event .history_img{
+    width: 0px;
+    height: 240px;
+    position: relative;
+    
+}
+.history .history_event .history_img img{
+    width: 250px;
+    height: 240px;
+    padding-left: 32px;
+    
+}
+
