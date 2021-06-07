@@ -29,8 +29,9 @@ body{
     transform: translate(-50%,-50%);
 }
 .container h1{
-    color: black;
-    margin-top: 80px;
+    color: green;
+    margin-top: 100px;
+    padding-top: 10px;
 }
 .container p{
     color: white;
@@ -41,15 +42,13 @@ body{
     margin: 0px;
     padding: 180px;
     box-sizing: border-box;
-    
-    
-}
-.body{
-    background: green;
+    padding-top: 35%;
     
 }
+
 .wrapper{
-    margin-top: 10%;
+    margin-top: 20%;
+
     
 }
 .wrapper h1{
@@ -73,6 +72,7 @@ body{
     line-height: 5px;
     color: purple;
     position: relative;
+    
 }
 .history .history_event h3{
     color: green;
@@ -94,7 +94,7 @@ body{
 .history .history_event .history_img img{
     width: 250px;
     height: 240px;
-    padding-left: 32px;
+    padding-left: 26px;
     
 }
 
