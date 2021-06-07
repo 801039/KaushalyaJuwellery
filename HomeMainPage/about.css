@@ -48,7 +48,6 @@ body{
 
 .wrapper{
     margin-top: 20%;
-
     
 }
 .wrapper h1{
@@ -92,9 +91,33 @@ body{
     
 }
 .history .history_event .history_img img{
-    width: 250px;
+    width: 280px;
     height: 240px;
-    padding-left: 26px;
+    padding-left: 13.4px;
     
 }
+.container2{
+    max-width: 1200px;
+    margin-left: 25%;
+    box-sizing: border-box;
+    padding-top: 50px;
+    
+}
+.container2 .gallery{
+    margin: 5px;
+    box-sizing: content-box;
+    float: left;
+    width: 390px;
+}
+.gallery h2{
+    
+    position:relative;
+
+    text-align: center;
+}
+.gallery img{
+    width: 250px;
+    height: 240px;
+}
+
 
