@@ -109,15 +109,25 @@ body{
     float: left;
     width: 390px;
 }
-.gallery h2{
-    
-    position:relative;
-
-    text-align: center;
-}
 .gallery img{
-    width: 250px;
+    width: 280px;
     height: 240px;
 }
+.container2 .gallery .gallery a{
+    position: relative;
+    font-size: 25px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.container3 {
+
+    padding-bottom: 5%; 
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    background: lightgreen;
+}
+
 
 
