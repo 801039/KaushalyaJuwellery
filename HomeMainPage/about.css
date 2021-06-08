@@ -29,8 +29,9 @@
     transform: translate(-50%,-50%);
 }
 .container h1{
-    color: black;
-    margin-top: 80px;
+    color: green;
+    margin-top: 100px;
+    padding-top: 10px;
 }
 .container p{
     color: white;
@@ -41,15 +42,12 @@
     margin: 0px;
     padding: 180px;
     box-sizing: border-box;
-    
-    
-}
-.body{
-    background: green;
+    padding-top: 35%;
     
 }
+
 .wrapper{
-    margin-top: 10%;
+    margin-top: 20%;
     
 }
 .wrapper h1{
@@ -73,6 +71,7 @@
     line-height: 5px;
     color: purple;
     position: relative;
+    
 }
 .history .history_event h3{
     color: green;
@@ -92,9 +91,33 @@
     
 }
 .history .history_event .history_img img{
-    width: 250px;
+    width: 280px;
     height: 240px;
-    padding-left: 32px;
+    padding-left: 13.4px;
     
 }
+.container2{
+    max-width: 1200px;
+    margin-left: 25%;
+    box-sizing: border-box;
+    padding-top: 50px;
+    
+}
+.container2 .gallery{
+    margin: 5px;
+    box-sizing: content-box;
+    float: left;
+    width: 390px;
+}
+.gallery h2{
+    
+    position:relative;
+
+    text-align: center;
+}
+.gallery img{
+    width: 250px;
+    height: 240px;
+}
+
 
