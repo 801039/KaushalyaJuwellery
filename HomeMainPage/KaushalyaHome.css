@@ -4,17 +4,20 @@
     box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    min-height: 100vh;
+body{ 
     background-color: lightgrey;
     background-image: linear-gradient(-135deg, silver 0%, gray 50%, black 75%);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 100%;
-    background: url("JuwellPhotos/Home.jpg") no-repeat top center / cover;   
     position: relative;
+}
+
+#main_page_cover{
+    background: url("JuwellPhotos/Home.jpg") no-repeat top center / cover;  
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: left;
 }
 
 /*Color over the background*/
@@ -146,6 +149,197 @@ ul{
     list-style-type: none;
 }
 
+/********************************************************************************************************/
+/* About Us */
+
+
+#about_us_page_cover{
+    background: url("about_us_photos/about_us_cover.jpg") no-repeat top center / cover;   
+    width: 100%;
+    height: 200%; 
+    top: 0%;
+}
+
+.about_container{
+    height: 75vh;
+    width: 30%;
+    background:rgba(0,0,0,.3);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+}
+#owner1{
+    height: 70px;
+    width: 70px;
+    background: url(about_us_photos/abt.jpg)no-repeat;
+    background-size: cover;
+    background-position:center ;
+    border-radius: 100%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#owner1:hover{
+    height: 150px;
+    width: 150px;
+    box-shadow: 3px 2px 10px whitesmoke;
+}
+
+.about_container h1{
+    color: rgb(214, 179, 20);
+    margin-top: 100px;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+.about_container h1:hover{
+    color: rgb(245, 208, 47);
+}
+
+.about_container p{
+    color: rgb(226, 218, 218);
+    margin-top: 50px;
+    font-size: large;
+}
+
+.about_container p:hover{
+    color: white;
+}
+
+/****************************************************/
+
+/* Achivements Slide Show */
+/* Styling the area of the slides */
+#slideshow {
+    position: absolute;
+    overflow: hidden;
+    
+    height: 300px;
+    width: 500px;
+    margin: 2px auto;
+    padding: 2px;
+  }
+    
+  /* Style each of the sides 
+  with a fixed width and height */
+  .slide, .slide2 {
+    float: left;
+    height: 510px;
+    width: 728px;
+  }
+    
+  /* Add animation to the slides */
+  .slide-wrapper {
+    /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(728px * 4);
+    
+    /* Specify the animation with the
+    duration and speed */
+    animation: slide 20s ease infinite;
+  }
+    
+  /* Set the background pic
+  of each of the slides */
+  .slide:nth-child(1) {
+    background: url(about_us_photos/fshop.jpg)no-repeat top center / cover;
+    height: 300px;
+    width: 500px;
+  }
+    
+  .slide:nth-child(2) {
+    background: url(about_us_photos/twenty.jpg)no-repeat top center / cover;
+    height: 300px;
+    width: 500px;
+  }
+    
+  .slide:nth-child(3) {
+    background: url(about_us_photos/modern.jpg)no-repeat top center / cover;
+    height: 300px;
+    width: 500px;
+  }
+    
+  .slide:nth-child(4) {
+    background: url(about_us_photos/family.jpg)no-repeat top center / cover;
+    height: 300px;
+    width: 500px;
+  }
+    
+  /* Define the animation 
+  for the slideshow */
+  @keyframes slide {
+    /* Calculate the margin-left for 
+    each of the slides */
+    20% {
+      margin-left: 0px;
+    }
+    
+    40% {
+      margin-left: calc(-500px * 1);
+    }
+    
+    60% {
+      margin-left: calc(-500px * 2);
+    }
+    
+    80% {
+      margin-left: calc(-500px * 3);
+    }
+  }
+
+  .achivements_slide_show{
+    position: absolute;
+    top: 50%;
+    right: 40%;
+  }
+
+  .topics{    
+      text-align: center;
+      color: rgb(207, 181, 30);
+  }
+
+  .topics:hover{ 
+    color: rgb(255, 222, 36);
+}
+
+/*****************************************/
+/* branches */
+
+.branches_slide_show{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+
+ /* Set the background pic
+  of each of the slides */
+  .slide2:nth-child(1) {
+    background: url(about_us_photos/branch1.jpg)no-repeat top center / cover;
+    height: 300px;
+    width: 500px;
+  }
+    
+  .slide2:nth-child(2) {
+    background: url(about_us_photos/branch3.jpg)no-repeat top center / cover;
+    height: 300px;
+    width: 500px;
+  }
+    
+  .slide2:nth-child(3) {
+    background: url(about_us_photos/branch4.jpg)no-repeat top center / cover;
+    height: 300px;
+    width: 500px;
+  }
+    
+  .slide2:nth-child(4) {
+    background: url(about_us_photos/branch5.jpg)no-repeat top center / cover;
+    height: 300px;
+    width: 500px;
+  }
 
 
 
@@ -167,14 +361,7 @@ ul{
 
 
 
-
-
-
-
-
-
-
-
+/***************************************************************************************************/
 /*Logo of Kaushalya Jewelery*/
 #logo {
     position: absolute;
