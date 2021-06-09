@@ -237,7 +237,7 @@ ul{
   .slide-wrapper {
     /* Calculate the total width on the
     basis of number of slides */
-    width: calc(728px * 5);
+    width: calc(728px * 4);
     
     /* Specify the animation with the
     duration and speed */
@@ -270,11 +270,6 @@ ul{
     width: 500px;
   }
 
-  .slide:nth-child(5) {
-    background: url(about_us_photos/service.jpg)no-repeat top center / cover;
-    height: 300px;
-    width: 500px;
-  }
     
   /* Define the animation 
   for the slideshow */
@@ -348,12 +343,7 @@ ul{
     width: 500px;
   }
 
-  .slide2:nth-child(5) {
-    background: url(about_us_photos/branch2.jpg)no-repeat top center / cover;
-    height: 300px;
-    width: 500px;
-  }
-
+  
 
 
 
