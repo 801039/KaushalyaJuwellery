@@ -21,11 +21,15 @@ body {
 	
 	
 }
+/*******************************************************************************/
+/* nav bar */
 
 /*hamb menu box*/
 .menu-btn{
     margin-left: 15px;
-    position: relative;
+    position: absolute;
+    left: 0px;
+    top: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,7 +144,7 @@ ul{
     list-style-type: none;
 }
 
-
+/**************************************************************************************/
 
 .cs {
 	color: #fff;
