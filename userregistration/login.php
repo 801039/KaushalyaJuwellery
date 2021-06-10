@@ -12,6 +12,27 @@
 </head>
 
 <body>
+	<!-- ***********************Nav bar***************************** -->
+	<div class="menu-btn">
+		<div class="menu-btn_burger">
+
+		</div>
+			
+		<div class="nav" id="nav"></div>
+			<div class="text">
+				<ul>
+				  <p></p>
+					<li id="home"><a href="">🏠Home</a></li>
+					<li><a href="">🚶Join Us</a></li>
+					<li><a href="Bracelet.html" target="blank">🏢Shop</a></li>
+					<li><a href="">🎁Offers</a></li>
+					<li><a href="About_us.html" target="_blank">👨‍About Us</a></li>
+					<li><a href="">💬Chat</a></li>
+				</ul>
+			</div>
+		</div><!--class nav over here-->
+
+
 	<!-- ============== Login form strcucture creation =====================  -->
 
 	<div class="regform"><h1>Login</h1></div> 	<!-- Login word decoration from regform class -->
@@ -40,6 +61,22 @@
 		
 
 	</div>
+
+	<script>
+		//Hamburger menu
+const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click', () =>{
+    if (!menuOpen){
+        menuBtn.classList.add('open');
+        menuOpen = true;
+    }else{
+        menuBtn.classList.remove('open');
+        menuOpen = false;
+    }
+})
+
+	</script>
 
 </body>
 
