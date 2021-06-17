@@ -1,0 +1,264 @@
+/* index page style */
+
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Whole Doc */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #131313;
+}
+
+/* Home icon */
+.home_icon{
+    position: absolute;
+    top:80px;
+    left: 100px;
+    color:gold;
+}
+/* chat icon */
+.chat_icon{
+    position:absolute;
+    top: 80px;
+    left: 150px;
+    color: gold;
+}
+
+.container{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Whole Card */
+.container .card{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    margin: 20px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.6s ease-in;
+}
+
+.container .card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(200px at 130% 50%);
+    transition: all 0.5s ease-in;
+}
+
+.container .card:nth-child(1)::before{
+    background: #ac5712;
+}
+
+.container .card:nth-child(2)::before{
+    background: #2980b9;
+}
+
+.container .card:nth-child(3)::before{
+    background: #8e44ad;
+}
+
+.container .card:hover::before{
+    clip-path: circle(300px at 120% 50%);
+}
+
+.container .card::after{
+    content: '20% OFF';
+    position: absolute;
+    top: 10%;
+    left: 0;
+    transform: rotate(-35deg);
+    font-size: 5rem;
+    font-weight: 800;
+    font-style: italic;
+    color: rgb(255,255,255,0.04);
+}
+
+/* Image */
+.card .imBox{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    top: 20%;
+    padding-top: 20px;
+    overflow: hidden;
+    z-index: 10;
+    transition: all 0.5s ease-in;
+}
+
+.card:hover .imBox{
+    top: 0;
+    transform: translateY(0%);
+}
+
+.card .imBox img{
+    width: 100%;
+    height: 100%;
+    transform: rotate(25deg);
+}
+
+/* Whole Content Box */
+.card .contentBox{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    z-index: 8;
+    transition: all 0.8s ease-in;
+}
+
+.card:hover .contentBox{
+    height: 150px;
+}
+
+.card .contentBox h2{
+    position: relative;
+    bottom: 20px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+
+/* All Color and Price */
+.card .contentBox .pc{
+    display: flex;
+    align-items: center;
+    height: 52px;
+    width: 100%;
+    margin: 6px 0;
+}
+
+/* Price */
+.card .contentBox .pc .price{
+    width: 50%;
+    height: 100%;
+    padding: 6px 0;
+    text-align: center;
+    transition: all 0.6s ease-in;
+}
+
+.card:nth-child(1) .contentBox .pc .price{
+    background: #ac5712;
+}
+
+.card:nth-child(2) .contentBox .pc .price{
+    background: #2980b9;
+}
+
+.card:nth-child(3) .contentBox .pc .price{
+    background: #8e44ad;
+}
+
+.card .contentBox .pc .price h5 strike{
+    color: #232323;
+}
+
+/* Color */
+.card .contentBox .pc .color{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    padding: 5px 0;
+    background: #232323;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s ease-in;
+}
+
+.card .contentBox .color span{
+    height: 20px;
+    width: 20px;
+    border: none;
+    border-radius: 50%;
+    margin-left: 5px;
+    background: #9bdc28;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.card .contentBox .pc .color span:nth-child(2){
+    background: #ac5712;
+}
+
+.card .contentBox .pc .color span:nth-child(3){
+    background: #2e12ac;
+}
+
+.card .contentBox .pc .color span:nth-child(4){
+    background: #ac1286;
+}
+
+.card .contentBox .color span:hover{
+    border: #fff 2px solid;
+}
+
+/* Buttons */
+.card .contentBox .btns{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.6s ease-in;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card:hover .contentBox .btns{
+    opacity: 1;
+    visibility: visible;
+}
+
+.card .contentBox .btns a{
+    width: 50%;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    outline: none;
+    transition: all 0.5s ease-in;
+}
+
+.card:nth-child(1) .contentBox .btns a:nth-child(1){
+    background: #ac5712;
+}
+
+.card:nth-child(2) .contentBox .btns a:nth-child(1){
+    background: #2980b9;
+}
+
+.card:nth-child(3) .contentBox .btns a:nth-child(1){
+    background: #8e44ad;
+}
+
+.card .contentBox .btns a:nth-child(2){
+    background: #232323;
+}
+
+.card:nth-child(1) .contentBox .btns a:hover,
+.card:nth-child(2) .contentBox .btns a:hover,
+.card:nth-child(3) .contentBox .btns a:hover{
+    background: #fff;
+    color: #131313;
+}

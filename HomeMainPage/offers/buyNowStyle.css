@@ -1,0 +1,95 @@
+/* buy here page style sheeet */
+/* for all */
+*{
+	margin:0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+/* form body */
+body{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	background: url(coverb.jpg) no-repeat;
+	background-position: top center;
+	background-size: cover;
+}
+
+body::before{
+	content: '';
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	opacity: 0.4;
+	background: #34495E;
+}
+
+
+ /* contact section */
+
+ .contact-section{
+ 	position: relative;
+ 	top: 40px;
+ 	width: 40%;
+ 	background: #34495E;
+ 	opacity: 0.9;
+ }
+
+/* Heading */
+.contact-section{
+	text-align: center;
+	color: #ecf0f1;
+	font-weight: normal;
+	letter-spacing: 0.1rem;
+}
+
+.border{
+	width: 100px;
+	height: 6px;
+	background: #e74c3c;
+	margin: 20px auto;
+}
+
+/* form */
+.cotact-form{
+	max-width: 600px;
+	margin: auto;
+	padding: 0 20px;
+	overflow: hidden;
+}
+
+.c-text{
+	display: block;
+	width: 75%;
+	box-sizing: border-box;
+	margin: 16px 60px;
+	border: none;
+	background: #ecf0f1;
+	padding: 20px 40px;
+	outline: none;
+	color: #2c3e50;
+	transition: all 0.5s;
+}
+
+.c-text:focus{
+	padding: 15px 30px;
+}
+
+.c-btn{
+	width::100%; 
+	height: 5vh;
+	font-size: 1rem;
+	background: #e74c3c;
+	outline: none;
+	border:none;
+	color: #ecf0f1;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.c-btn:hover{
+	background: #ecf0f1;
+	color: #e74c3c;
+	font-size: 1.1rem;
+}

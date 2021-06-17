@@ -1,12 +1,12 @@
-<?php 
+<?php
 
 include 'config.php';
 
 error_reporting(0);
 
-if (isset($_POST['submit'])) { 
-	$name = $_POST['name']; 
-	$email = $_POST['email']; 
+if (isset($_POST['submit'])) {
+	$name = $_POST['name'];
+	$email = $_POST['email'];
 	$comment = $_POST['comment'];
 	$phone = $_POST['phone'];
 
@@ -24,35 +24,38 @@ if (isset($_POST['submit'])) {
 
 <!DOCTYPE html>
 <html>
+
 <head>
-	
+
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<title> customer service </title>
 </head>
+
 <body>
-		<!--menu bar-->
-		<div class="menu-btn">
-            <div class="menu-btn_burger">
+	<!-- ********************************Nav Bar******************************************* -->
+	<!--menu bar-->
+	<div class="menu-btn">
+		<div class="menu-btn_burger">
 
-            </div>
-                
-            <div class="nav" id="nav"></div>
-                <div class="text">
-                    <ul>
-                      <p></p>
-                        <li id="home"><a href="">🏠Home</a></li>
-                        <li><a href="">🚶Join Us</a></li>
-                        <li><a href="Bracelet.html" target="blank">🏢Shop</a></li>
-                        <li><a href="">🎁Offers</a></li>
-                        <li><a href="">👨‍About Us</a></li>
-                        <li><a href="">💬Chat</a></li>
-                    </ul>
-                </div>
-            </div>
+		</div>
 
- <script src="cs.js"></script>
+		<div class="nav" id="nav"></div>
+		<div class="text">
+			<ul>
+				<p></p>
+				<li id="home"><a href="/WebProject/KaushalyaJuwellery/HomeMainPage/KaushalyaHome.php">🏠Home</a></li>
+				<li><a href="/WebProject/KaushalyaJuwellery/HomeMainPage/userregistration/login.php">🚶Join Us</a></li>
+				<li><a href="/WebProject/KaushalyaJuwellery/HomeMainPage/Bracelet.php">🏢Shop</a></li>
+				<li><a href="/WebProject/KaushalyaJuwellery/HomeMainPage/offers/index.php">🎁Offers</a></li>
+				<li><a href="/WebProject/KaushalyaJuwellery/HomeMainPage/about_us/about.php" target="_blank">👨‍About Us</a></li>
+				<li><a href="#">💬Chat</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="cs.js"></script>
 
 
 
@@ -61,12 +64,12 @@ if (isset($_POST['submit'])) {
 
 
 	<div class="cs">
-	<h1">Customer Service<h1>
+		<h1">Customer Service<h1>
 	</div>
 	<div class="p">
-	<p>We are committed to providing services for your needs.</p>
+		<p>We are committed to providing services for your needs.</p>
 	</div>
-	<div class="wrapper"> 
+	<div class="wrapper">
 		<form action="" method="POST" class="form">
 			<div class="row">
 				<div class="input-group">
@@ -91,7 +94,8 @@ if (isset($_POST['submit'])) {
 				<button name="submit" class="btn">Submit</button>
 			</div>
 		</form>
-		
+
 	</div>
 </body>
+
 </html>
